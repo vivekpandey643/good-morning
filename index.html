@@ -3,58 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Good Morning, My Love</title>
+    <title>Happy Birthday Yuvraj!</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: url('https://source.unsplash.com/1600x900/?sunrise,romantic') no-repeat center center/cover;
             text-align: center;
-            font-family: 'Arial', sans-serif;
+            background-color: #000;
             color: white;
+            font-family: Arial, sans-serif;
         }
-        .message-box {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-        h1 {
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        button {
-            margin-top: 15px;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            background: #ffcc00;
-            color: black;
-            border: none;
-            border-radius: 10px;
+        .cake {
+            width: 200px;
+            height: 200px;
+            background: url('https://i.imgur.com/Oo6Kq7F.png') no-repeat center;
+            background-size: cover;
+            margin: 50px auto;
             cursor: pointer;
-            transition: 0.3s;
         }
-        button:hover {
-            background: #ffdd44;
+        .hidden {
+            display: none;
+        }
+        .bike {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
         }
     </style>
-    <script>
-        function showMessage() {
-            alert("Good Morning, My Love! 💖 Wishing you a day full of happiness and sunshine! ☀️");
-        }
-    </script>
 </head>
 <body>
-    <div class="message-box">
-        <h1>Good Morning, Beautiful! ☀️</h1>
-        <p>Click the button below for a special message!</p>
-        <button onclick="showMessage()">Click Me 💕</button>
-    </div>
+    <h1>Happy 18th Birthday Yuvraj! 🎉</h1>
+    <p>Click on the cake to cut it!</p>
+    <div class="cake" id="cake"></div>
+    <img src="https://i.imgur.com/GP2GkCB.jpg" alt="Kawasaki ZX10R" class="bike hidden" id="bike">
+
+    <script>
+        document.getElementById("cake").addEventListener("click", function() {
+            this.style.display = "none";
+            document.getElementById("bike").classList.remove("hidden");
+        });
+    </script>
 </body>
 </html>
