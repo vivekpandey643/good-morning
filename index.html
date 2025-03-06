@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning, My Love</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?sunrise,romantic') no-repeat center center/cover;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        .message-box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background: #ffcc00;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ffdd44;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert("Good Morning, My Love! 💖 Wishing you a day full of happiness and sunshine! ☀️");
+        }
+    </script>
+</head>
+<body>
+    <div class="message-box">
+        <h1>Good Morning, Beautiful! ☀️</h1>
+        <p>Click the button below for a special message!</p>
+        <button onclick="showMessage()">Click Me 💕</button>
+    </div>
+</body>
+</html>
